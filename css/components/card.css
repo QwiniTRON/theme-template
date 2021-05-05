@@ -1,0 +1,25 @@
+.card {
+    --card\padding: calc(2 * var(--us));
+}
+
+.card .card__body {
+    background-color: hsl(var(--primary) var(--l-90));
+    border-radius: 0 0 var(--uc) var(--uc);
+    padding: var(--us);
+}
+
+.card .card__container {
+    padding: calc(2 * var(--us));
+}
+
+.card .card__footer-button {
+    margin-top: var(--us);
+}
+
+.card .card__title {
+    font-size: 2rem;
+    padding: var(--card\padding);
+
+    background-color: hsl(var(--primary) 40%);
+    color: white;
+}

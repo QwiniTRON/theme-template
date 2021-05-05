@@ -1,0 +1,15 @@
+@import "./components/components.css";
+@import "./system/system.css";
+@import "./font/font.css";
+
+
+body {
+    /* fonts */
+    font-size: var(--fzb, 14px);
+    line-height: var(--lhb, 1.4);
+    font-family: var(--ffb);
+
+    /* colors */
+    background-color: hsl(0 0% var(--l-100));
+    color: hsl(0 0% var(--l-0));
+}

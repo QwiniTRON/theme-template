@@ -1,0 +1,20 @@
+.button {
+    --main-color: var(--primary);
+    --button\transition-time: 0.3s;
+
+    padding: var(--us) calc(2 * var(--us));
+
+    border-radius: var(--uc);
+    border: 1px solid hsl(var(--main-color) 20%);
+
+    background-color: hsl(var(--main-color) 50%);
+
+    transition: background-color var(--button\transition-time), box-shadow var(--button\transition-time);
+    box-shadow: 0 0 9px 0 hsl(var(--main-color) 0%);
+}
+.button:hover {
+    background-color: hsl(var(--main-color) 40%);
+}
+.button:active {
+    box-shadow: 0 0 9px 0 hsl(var(--main-color) 30%);
+}
