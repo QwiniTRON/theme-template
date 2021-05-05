@@ -18,17 +18,7 @@ export class UserTheme {
     }
 
     static initTheme() {
-        const savedTheme = localStorage.getItem(UserTheme.userThemeStore);
-        const systemPrefer = window.matchMedia("(prefers-color-scheme: dark)");
-
-        let currentTheme = systemPrefer.matches ? ThemesEnum.dark : ThemesEnum.light;
-        if (savedTheme) currentTheme = savedTheme;
-
-        systemPrefer.onchange = (mediaQueryList) => {
-            const newTheme = mediaQueryList.matches ? ThemesEnum.dark : ThemesEnum.light;
-            const html = document.documentElement;
-            html.dataset.theme = savedTheme;
-        };
+        const currentTheme = UserTheme.GetCurrentTheme();
 
         const html = document.documentElement;
         html.dataset.theme = currentTheme;
